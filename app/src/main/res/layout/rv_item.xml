@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="160dp"
+    android:layout_height="200dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/rvImageArea"
+        android:layout_width="145dp"
+        android:layout_height="178dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/CustomImageStyle"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+
+    <TextView
+        android:id="@+id/rvTextAre3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/rvImageArea"
+        android:layout_alignEnd="@+id/rvImageArea"
+        android:layout_alignBottom="@+id/rvImageArea"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="8dp"
+        android:text="rvTextArea"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp" />
+
+    <android.widget.Button
+        android:id="@+id/favoriteButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/rvImageArea"
+        android:layout_alignBottom="@+id/rvImageArea"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bookmark_24dp_e8eaed_fill0_wght400_grad0_opsz24"
+        android:backgroundTint="#80FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page.Register">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="145dp"
+            android:text="   회원가입"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <android.widget.Button
+            android:id="@+id/backbutton"
+            android:layout_width="37dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/arrow_back_ios_24dp_fill0_wght400_grad0_opsz24"
+            android:onClick="goToMainActivity" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="62dp"
+            android:background="#19000000" /> <!-- 연한 색상으로 조정 -->
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="123dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edittext_rectangle"
+            android:hint="  이름" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="207dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edittext_rectangle"
+            android:hint="  이메일" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="291dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edittext_rectangle"
+            android:hint="  비밀번호"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="374dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edittext_rectangle"
+            android:hint="  전화번호" />
+
+        <android.widget.Button
+            android:id="@+id/btn_register"
+            android:layout_width="245dp"
+            android:layout_height="71dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="117dp"
+            android:background="@drawable/delete_btn_setting"
+            android:text="회원가입"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

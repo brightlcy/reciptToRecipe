@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_round_recycle">
+
+    <!-- 이미지 영역 -->
+    <ImageView
+        android:id="@+id/rvImageArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!-- 요리 제목 -->
+
+    <!-- 난이도 텍스트와 난이도 값 -->
+    <TextView
+        android:id="@+id/cookingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvImageArea"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:text="요리 제목"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/showingDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cookingTitle"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:text="난이도"
+        android:textColor="#808080"
+        android:textSize="18sp" />
+
+    <!-- 요리 시간 텍스트와 요리 시간 값 -->
+
+    <TextView
+        android:id="@+id/cookingDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showingDiff"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="-25dp"
+        android:layout_toEndOf="@id/showingDiff"
+        android:text="중간"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cookingDiff"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:text="요리시간"
+        android:textColor="#808080"
+        android:textSize="18sp" />
+
+    <!-- 제공량 텍스트와 제공량 값 -->
+
+    <TextView
+        android:id="@+id/cookingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sh"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="-26dp"
+        android:layout_toEndOf="@id/sh"
+        android:text="30분"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/showingServingSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cookingTime"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:text="제공량"
+        android:textColor="#808080"
+        android:textSize="18sp" />
+
+    <!-- 저장 버튼 -->
+
+    <!-- 더보기 버튼 -->
+
+    <TextView
+        android:id="@+id/servingSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showingServingSize"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="-26dp"
+        android:layout_toEndOf="@id/showingServingSize"
+        android:text="4인분"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <android.widget.Button
+        android:id="@+id/saveButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/bookmark_50dp_e8eaed_fill0_wght200_grad_25_opsz48"/>
+
+    <RelativeLayout
+        android:id="@+id/recipeMore"
+        android:layout_width="87dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/rvImageArea"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="17dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/arrow_forward_ios_24dp_e8eaed_fill0_wght100_grad_25_opsz24"
+            app:tint="#000000" />
+
+        <TextView
+            android:id="@+id/home_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginBottom="4dp"
+            android:text="더보기"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
